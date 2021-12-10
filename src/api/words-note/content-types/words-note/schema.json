@@ -1,0 +1,19 @@
+{
+  "kind": "collectionType",
+  "collectionName": "words_notes",
+  "info": {
+    "singularName": "words-note",
+    "pluralName": "words-notes",
+    "displayName": "WordsNote",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "contents": {
+      "type": "text"
+    }
+  }
+}
