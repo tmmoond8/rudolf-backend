@@ -14,6 +14,32 @@
   "attributes": {
     "contents": {
       "type": "text"
+    },
+    "title": {
+      "type": "string",
+      "default": "\"\"",
+      "required": true
+    },
+    "description": {
+      "type": "string",
+      "default": "\"\"",
+      "required": true
+    },
+    "coverImage": {
+      "type": "string",
+      "default": "\"\""
+    },
+    "author": {
+      "type": "relation",
+      "relation": "manyToMany",
+      "target": "plugin::users-permissions.user",
+      "inversedBy": "wordsNotes"
+    },
+    "tags": {
+      "type": "relation",
+      "relation": "manyToMany",
+      "target": "api::tag.tag",
+      "inversedBy": "wordsNotes"
     }
   }
 }

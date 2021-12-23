@@ -1,0 +1,26 @@
+{
+  "kind": "collectionType",
+  "collectionName": "tags",
+  "info": {
+    "singularName": "tag",
+    "pluralName": "tags",
+    "displayName": "Tag"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "Tag": {
+      "type": "string",
+      "required": true,
+      "unique": true
+    },
+    "wordsNotes": {
+      "type": "relation",
+      "relation": "manyToMany",
+      "target": "api::words-note.words-note",
+      "inversedBy": "tags"
+    }
+  }
+}
