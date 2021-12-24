@@ -5,8 +5,10 @@
   "description": "A Strapi application",
   "scripts": {
     "dev": "strapi develop",
-    "start": "strapi start",
+    "start": "pm2 start 'yarn dev' --name rudolf-backend",
     "build": "strapi build",
+    "kill": "pm2 kill",
+    "stop": "pm2 delete rudolf-backend",
     "strapi": "strapi"
   },
   "devDependencies": {},
