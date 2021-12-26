@@ -65,7 +65,7 @@
     },
     "wordsNotes": {
       "type": "relation",
-      "relation": "manyToMany",
+      "relation": "oneToMany",
       "target": "api::words-note.words-note",
       "mappedBy": "author"
     }

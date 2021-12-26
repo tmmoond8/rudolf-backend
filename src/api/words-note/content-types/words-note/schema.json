@@ -31,7 +31,7 @@
     },
     "author": {
       "type": "relation",
-      "relation": "manyToMany",
+      "relation": "manyToOne",
       "target": "plugin::users-permissions.user",
       "inversedBy": "wordsNotes"
     },
